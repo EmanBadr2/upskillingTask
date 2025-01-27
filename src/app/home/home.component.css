@@ -1,0 +1,41 @@
+#home{ 
+    font-family: Poppins;
+    position: relative;
+    background-image: url(../../assets/images/Vector7.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh !important;
+}
+
+.layer{ left: 40%; }
+span  , h5 {
+font-size: 96px;
+line-height: 89.5px;
+}
+span { font-weight: 250; }
+h5   { font-weight: 900; }
+p {
+font-size: 18px;
+font-weight: 600;
+line-height: 25.5px;
+color: #4F4F4F;
+}
+
+
+/* -------Responsive------------------- */
+@media screen and (max-width: 768px) {
+    #home {  background-position: -200px -40px;} 
+   h5 ,span {
+    font-size: 32px;
+   font-weight: 400;
+   line-height: 23px;
+   }
+   button {
+    border-radius: 10px !important;
+    width: 50%;
+   }
+   .layer{
+    left: 10%;
+   }
+}

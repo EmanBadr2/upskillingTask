@@ -1,0 +1,107 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --main-color:#6D91EE ;
+    --main-f-family:  Poppins ;
+}
+body {
+    background-color: #f1f1f1;
+}
+section {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+h1,h2,h3,h4,h5,h6{
+   text-transform: capitalize; 
+}
+h2 {
+    font-family: var(--main-f-family);
+    color: var(--main-color);
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 89.5px ;
+}
+.item p {
+font-family:var(--main-f-family);
+font-size: 14px;
+font-weight: 400;
+line-height: 22px;
+text-align: left;
+}
+.item h5 {
+font-family: var(--main-f-family);
+font-size: 18px;
+font-weight: 700;
+line-height: 22px;
+text-align: left;
+}
+
+
+i {color: var(--main-color);
+     font-size: 20px;
+     transition: .8s;
+}
+i:hover {
+    cursor: pointer;
+    transform: scale(1.1) ;
+}
+
+/*-------- button style ---------*/
+.btn-style {
+    width: 30%;
+    background-color: #5180F6;
+    transition: .8s;
+}
+.btn-style:hover {
+    background-color: #518ef6ad !important;
+    transform: scale(.99) ;
+}
+/* -------------  h2 Style ------------------ */
+.line {
+    width: 2px;
+    height: 45px;
+   background-color: #5180F6;
+}
+.line1 {
+    top: 0%;
+    right: 5%;
+    transform: rotate(-45deg);
+}
+
+.line2 {
+    bottom: 0%;
+    right: 5%;
+    transform: rotate(45deg);
+}
+.line3 {
+    top: 0%;
+    left: 5%;
+    transform: rotate(-135deg);
+
+}
+.line4 {
+    bottom: 0%;
+    left: 5%;
+    transform: rotate(135deg);
+}
+
+/* ------------------Responsive Styles------------------------ */
+@media screen and (max-width: 1000px){
+
+    .line { display: none;}
+}
+@media screen and (max-width: 767px) {
+    section { height: auto;  overflow: hidden;}
+    h2 { font-size: 32px; font-weight: 700; line-height: 20px ; }
+    P { font-size: 16px; font-weight: 400;  }
+
+    .item h5{ font-weight: 500; line-height: 15px;}
+    .line { display: none;}
+}
+
+@media screen and (max-width: 575px) {
+     section { height: auto; }
+     h2 { font-size: 22px; font-weight: 400;  line-height: 10px ;}
+     .item h5{ font-weight: 400;  line-height: 10px;}
+     .line { display: none;}
+}

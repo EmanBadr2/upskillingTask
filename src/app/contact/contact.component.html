@@ -1,0 +1,70 @@
+ <section id="contact" class="position-relative  "  > 
+
+    <div  class=" container   py-5 justify-content-center ">
+
+    <div class="h2-style  position-relative w-50 m-auto mb-5">
+      <h2 class="text-center py-2 ">contact us</h2>
+      <div class="line line1 position-absolute "></div>
+      <div class="line line2 position-absolute "></div>
+      <div class="line line3 position-absolute "></div>
+      <div class="line line4 position-absolute "></div>
+    </div>
+
+    <div class="row flex-wrap gy-5 align-items-center justify-content-center"> 
+
+        <div class="col-md-6  col-lg-8 col-sm-12">
+
+         <form [formGroup]="registerForm" (ngSubmit)="handelRegister(registerForm)"  >
+
+          <input formControlName="name" type="text" class="form-control border-0 rounded-pill my-3 p-3 w-75" placeholder="Name">
+          <div class="alert  alert-danger w-75 rounded-pill"
+           *ngIf="registerForm.get('name')?.touched && registerForm.get('name')?.errors" > 
+            <p *ngIf="registerForm.get('name')?.getError('required')"  class="m-0" > Name is Required</p>
+            <p *ngIf=" registerForm.get('name')?.getError('pattern') "  class="m-0"> Name MinLength 3 && max 12 </p>
+          </div>
+
+          <input formControlName="email" type="email" class="form-control border-0 rounded-pill my-3 p-3 w-75" placeholder="Email">
+          <div class="alert  alert-danger w-75 rounded-pill"
+           *ngIf="registerForm.get('email')?.touched && registerForm.get('email')?.errors" > 
+            <p *ngIf="registerForm.get('email')?.getError('required')"  class="m-0" > email is Required</p>
+            <p *ngIf="registerForm.get('email')?.getError('email')"  class="m-0" > email is invalid</p>
+
+          </div>
+
+          <input formControlName="phone" type="tel" class="form-control border-0 rounded-pill my-3 p-3 w-75" placeholder="Phone">
+          <div class="alert  alert-danger w-75 rounded-pill"
+           *ngIf="registerForm.get('phone')?.touched && registerForm.get('phone')?.errors" > 
+            <p *ngIf="registerForm.get('phone')?.getError('required')"  class="m-0" > phone is Required</p>
+            <p *ngIf=" registerForm.get('phone')?.getError('pattern') "  class="m-0"> must be valid number </p>
+           </div>
+
+         <div class="m-auto text-center" > 
+            <button  [disabled]="registerForm.invalid"  type="submit" class="btn  rounded-pill translate-middle-x">Send</button>
+         </div>
+
+        </form>
+       </div>
+
+       <div class="col-md-3 col-lg-3 col-sm-12">
+        <div class="d-flex align-items-center py-3 ">
+            <i class="fa-solid fa-envelope "></i>
+            <span class="mx-4">upskilling.eg1.gmail.com</span>
+        </div>
+
+        <div class="d-flex align-items-center py-3 ">
+            <i class="fa-solid fa-phone"></i>
+            <span class="mx-4"> 01154932137 </span>
+        </div>
+        
+      </div>
+
+  </div>
+
+
+</div>
+
+<div class="footer position-absolute bottom-0 w-100 "></div>
+
+
+</section>
+

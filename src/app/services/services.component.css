@@ -1,0 +1,20 @@
+
+#services {
+    color:#324473 ;
+}
+.item{
+    border-radius: 30px;
+    background-color: #fff;
+}
+.item:hover {
+    transform: scale(.99) ;
+    cursor: pointer;
+   
+}
+/* --------------------------------- */
+@media screen and (max-width: 767px)  {
+    button {width: 40%;}
+}
+@media screen and (max-width: 575px) {
+    button {width: 60%;}
+}

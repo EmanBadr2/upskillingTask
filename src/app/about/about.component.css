@@ -1,0 +1,56 @@
+#about {
+    height: 100vh !important;
+    position: relative;
+    background-image: url(../../assets/images/about.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.layout {
+    clip-path: polygon(77% 0, 100% 0, 100% 100%, 22% 100%);
+    background: var(--main-color);
+}
+
+.layout-content {
+ width: 40%;
+}
+.layout-content p , .layout-content h2 { text-align: right; }
+
+button {
+    width: 50%;
+    background: #EEC04B;
+    transition: .8s;
+    color: gray;
+}
+button:hover {
+    background: #eec04bdd !important;
+    transform: scale(.99) ;
+}
+
+
+
+/* ------------------Responsive Styles------------------------ */
+@media screen and (max-width: 1000px){
+
+    .layout-content p , .layout-content h5 , .layout-content button  {
+        font-size: 10px;
+    }
+    .layout-content button  {
+        width: 40%;
+        border-radius: 15px !important;
+    }
+}
+@media screen and (max-width: 575px) {
+    .layout-content p , .layout-content h5 , .layout-content button  {
+        font-size: 10px;
+        line-height: 13px;
+    }
+    .layout-content button  {
+        width: 35%;
+        border-radius: 2px !important;
+    }
+}
+
+

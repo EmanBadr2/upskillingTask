@@ -1,0 +1,13 @@
+#Testymonials { color: var(--main-color); }
+.item{
+    border: 2px solid var(--main-color) ;
+    border-radius: 30px;
+    background-color: #fff;
+}
+
+#Testymonials .item-content p { color:#22366A ;}
+
+.item:hover {
+    box-shadow: 10px 10px 30px rgb(128, 128, 128);
+    cursor: pointer;
+}

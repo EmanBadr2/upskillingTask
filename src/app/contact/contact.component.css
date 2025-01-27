@@ -1,0 +1,21 @@
+#contact { background-color: #FCFCFC; }
+input    { background: #CEDCFF;} 
+span     { color:Gray  ; }
+button   { width: 20%; border: 3px solid #5180F6 ; }
+button:hover {
+    border: 3px solid #5180f6a4 !important;
+}
+.footer { background-color: #0C1E49;  height: 140px; }
+
+
+
+
+/* ------------------Responsive Styles------------------------ */
+@media screen and (max-width: 767px) {
+    .footer{ height: 50px ;}
+}
+@media screen and (max-width: 575px) {
+    .footer{ height: 15px;}
+}
+
+
